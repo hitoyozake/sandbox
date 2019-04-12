@@ -1,0 +1,4 @@
+# sshのポートフォワーディング -Lオプション=ローカルでのポートフォワーディング
+ssh -L [client-port]:[remoteで名前解決されるhostname/ip]:[remote-port]  [username]@[remote-name/ip] [-i -p ]
+
+メモ(jupyterのsshでnotebookを作る際に使用したコマンド)
