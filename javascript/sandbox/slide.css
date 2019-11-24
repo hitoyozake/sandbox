@@ -18,8 +18,7 @@
 
 .animation_test {
     animation:
-      h 1400ms ease-out 1, 
-      stop 1400ms ease-in 3000ms 1;
+      h 4000ms ease-in-out infinite;
 }
   
 @keyframes h{
@@ -29,11 +28,26 @@
         transform: translateX(-600px);
         position: absolute;
     }
-    100% { 
-        transform: translateX(0px);
+
+    25% { 
         opacity: 1.0;
+        transform: translateX(000px);
         position: absolute;
     }
+
+
+    75% { 
+        opacity: 1.0;
+        transform: translateX(000px);
+        position: absolute;
+    }
+
+    100%{ 
+        opacity: 0.0;
+        transform: translateX(600px);
+        position: absolute;
+    }
+
 }
 
 @keyframes stop{
